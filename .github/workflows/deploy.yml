@@ -42,7 +42,7 @@ jobs:
           npx sonarqube-scanner \
             -Dsonar.projectKey=ReactTest \
             -Dsonar.sources=. \
-            -Dsonar.host.url=https://sonarcloud.io \
+            -Dsonar.host.url=$SONAR_HOST_URL \
             -Dsonar.login=$SONAR_TOKEN \
             -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
       - name: Check code coverage
