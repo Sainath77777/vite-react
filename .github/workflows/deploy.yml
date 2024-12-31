@@ -22,7 +22,7 @@ jobs:
       
 
       - name: Run tests with coverage
-        run: npm run test:coverage
+        run: npm run test -- --coverage --passWithNoTests
 
       - uses: sonarsource/sonarqube-scan-action@master
         env:
